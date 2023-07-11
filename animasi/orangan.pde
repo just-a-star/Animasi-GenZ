@@ -1,9 +1,5 @@
 void orgbaru(){
-  //hijau
-fill(0,255,0);
-beginShape();
-rect(0.047994044,423.07693,1280,297);
-endShape();
+
 fill(255,208,102);  // warna kulit
 noStroke();
   //strokeWeight(3);  // Mengatur ketebalan garis
@@ -13,6 +9,7 @@ noStroke();
 beginShape();
 ellipse(241.76625, 169.47485, 73.892,79.534);
 endShape();
+
 //leher
 beginShape();
 vertex(257.41194, 230.99003);
@@ -20,6 +17,7 @@ vertex(227.85524, 230.99003);
 vertex(228.1239, 201.52291);
 vertex(256.87451, 201.52291);
 endShape(CLOSE);
+
 //telinga
 beginShape();
 vertex(276.67696, 173.77782);
@@ -75,17 +73,28 @@ arc(242.37364, 188.79431, 11.273, 3.610, 0, 3.1415927);
 endShape(CLOSE);
 
 //rambut
+fill(0);
 beginShape();
-vertex(124.80246, 126.10856);
-vertex(114.84585, 107.03106);
-bezierVertex(114.84585, 107.03106, 110.93172, 111.02993, 99.11754, 110.52413);
-bezierVertex(86.04219, 109.96433, 82.602229, 107.26846, 82.602229, 107.26846);
-vertex(70.28442, 125.75031);
-vertex(71.60722, 105.86389);
-bezierVertex(84.78655, 92.715326, 94.51583, 91.437816, 107.11084, 101.08298);
-bezierVertex(119.13065, 111.222443, 118.07877, 135.47622, 118.07877, 135.47622);
+vertex(278.15652, 170.61786);
+vertex(246.53467, 149.30537);
+vertex(205.03294, 171.43902);
+bezierVertex(202.66846, 155.08193, 211.36794, 138.92484, 230.20254, 127.73608);
+bezierVertex(241.33728, 115.43071, 258.05669, 116.14843, 287.91084, 127.73608);
+bezierVertex(301.45125, 136.45238, 314.99166, 145.16869, 320.17909, 154.55226);
+vertex(278.15652, 170.61786);
 endShape(CLOSE);
 
+
+
+//beginShape();
+//ellipse(241.99364,137.43159,46.739,19.000);
+//endShape();
+////beginShape();
+////arc(274.83191, -127.19537, 31.142, 39.456, 3.1415927,0);
+////endShape(CLOSE);
+//beginShape();
+//arc(19.87457,268.74234,40.036,40.198,3.1415927,0);
+//endShape(CLOSE);
 
 
 //tangan
@@ -112,7 +121,7 @@ endShape(CLOSE);
 
 
   //baju lengan kanan
-  fill(0);
+  fill(128,128,0);
 beginShape();
 vertex(266.12994, 241.23687);
 vertex(290.3255, 268.08249);
@@ -131,7 +140,7 @@ vertex(221.12533, 219.99152);
 vertex(222.23625, 235.90199);
 endShape(CLOSE);
 //baju tengah
-fill(0);
+fill(128,128,0);
 beginShape();
 vertex(280.59779, 313.2457);
 vertex(205.43045, 313.3941);
@@ -140,7 +149,8 @@ vertex(226.50567, 217.00319);
 bezierVertex(233.39478, 226.83399, 253.91474, 224.0045, 258.71681, 217.04478);
 vertex(274.2914, 218.36141);
 endShape(CLOSE);
-
+//celana
+fill(128,51,0);
 beginShape();
 vertex(244.86, 343.4393);
 vertex(243.8063, 343.28911);
@@ -153,6 +163,7 @@ vertex(257.2155, 473.66826);
 endShape(CLOSE);
 
 //sepatu
+fill(0);
 beginShape();
 ellipse(221.58565, 478.37457, 29.378, 18.630);
 endShape();

@@ -4,5 +4,10 @@ void setup(){
 }
 
 void draw(){
+    //hijau
+fill(0,255,0);
+beginShape();
+rect(0.047994044,423.07693,1280,297);
+endShape();
   scene1();
 }
