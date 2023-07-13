@@ -14,24 +14,45 @@ Orang orang2 = new Orang(100 , 200, color(104 ,243,248), color(0,204,0));
 Orang orang3 = new Orang(300 , 200, color(224 ,17,95), color(255,127,0));
 int detik = 1;
 
+// Scene 2
+import processing.sound.*; //<>//
+ 
 
+Teks teks = new Teks();
+Teks2 teks2 = new Teks2();
+Teks3 teks3 = new Teks3();
+Teks4 teks4 = new Teks4();
+Teks5 teks5 = new Teks5();
+Teks6 teks6 = new Teks6();
 
 void setup(){
   size(1280, 720);
   frameRate(24);
   smooth();
   fill(0,255,0);
+   loadSound();
+ 
 }
 void draw(){
+  
   //Scene 1 pembicaraan antara orang 1 dan 2
+   
   if(detik>0 && detik<3*hz){
+     
+    kenapa.play();
+    scene1SoundPlayed = true;
     background1();
-
+    
     meja.display();
     papan.display();
     matahari.display();
     awan1.display();
     awan1.moveAwan(); 
+
+ //translate(150,120);
+    //orang1.lokasi();
+    //orang1.display();
+    //orang1.keyPressed();
     
     orang2.display();
     orang3.display();

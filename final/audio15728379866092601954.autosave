@@ -1,0 +1,23 @@
+ // Scene 1
+boolean scene1SoundPlayed = false;
+
+// Scene 2
+boolean scene2SoundPlayed = false;
+
+  
+   // Scene 3
+boolean scene3SoundPlayed = false;
+
+// Scene 4
+boolean scene4SoundPlayed = false;
+
+SoundFile kenapa;
+
+SoundFile a11;
+
+SoundFile b11;
+
+void loadSound(){
+  kenapa = new SoundFile(this, "kenapa.mp3");
+  a11 = new SoundFile(this, "a11");
+}

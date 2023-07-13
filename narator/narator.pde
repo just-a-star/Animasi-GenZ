@@ -14,8 +14,8 @@ void setup() {
   //smooth();
  
   teks.startTime = millis(); // Menyimpan waktu mulai teks-1
-  // kenapa = new SoundFile(this, "kenapa.mp3");
-  //kenapa.play();
+  kenapa = new SoundFile(this, "kenapa.mp3");
+  kenapa.play();
 }
 
 void draw() {

@@ -1,0 +1,58 @@
+ // Scene 1
+boolean scene1SoundPlayed = false;
+
+// Scene 2
+boolean scene2SoundPlayed = false;
+
+  
+   // Scene 3
+boolean scene3SoundPlayed = false;
+
+// Scene 4
+boolean scene4SoundPlayed = false;
+
+
+
+SoundFile kenapa;
+
+SoundFile a11;
+
+SoundFile b11;
+SoundFile asista_maksud;
+SoundFile asista_oalah;
+SoundFile bf31;
+SoundFile bf32;
+SoundFile bf71;
+SoundFile daudc1;
+SoundFile daudf3c1;
+SoundFile nf41;
+SoundFile nf42;
+SoundFile nf43;
+SoundFile nf44;
+SoundFile nf45;
+SoundFile nf46;
+SoundFile nf47;
+
+
+
+void loadSound(){
+  kenapa = new SoundFile(this, "kenapa.mp3");
+  a11 = new SoundFile(this, "audio/a11.mp3");
+  b11 = new SoundFile(this, "audio/b11.mp3");
+   asista_maksud = new SoundFile(this, "audio/asista_maksud.mp3");
+   asista_oalah = new SoundFile(this, "audio/asista_oalah.mp3");
+   bf31 = new SoundFile(this, "audio/bf31.mp3");
+   bf32 = new SoundFile(this, "audio/bf32.mp3");
+   bf71 = new SoundFile(this, "audio/bf71.mp3");
+   daudc1 = new SoundFile(this, "audio/daud_c1.mp3");
+   daudf3c1 = new SoundFile(this, "audio/daud_f3c1.mp3");
+   nf41 = new SoundFile(this, "audio/nf41.mp3");
+   nf42 = new SoundFile(this, "audio/nf42.mp3");
+   nf43 = new SoundFile(this, "audio/nf43.mp3");
+   nf44 = new SoundFile(this, "audio/nf44.mp3");
+   nf45 = new SoundFile(this, "audio/nf45.mp3");
+   nf46 = new SoundFile(this, "audio/nf46.mp3");
+   nf47 = new SoundFile(this, "audio/nf47.mp3");
+
+
+}
