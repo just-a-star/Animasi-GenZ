@@ -1,9 +1,15 @@
 Awan awan1 = new Awan(200,150,2);
-Awan awan2 = new Awan(1200,120,4);
-Awan awan3 = new Awan(600,180,3);
+Awan awan2 = new Awan(1200,80,4);
+Awan awan3 = new Awan(600,50,3);
 Matahari matahari = new Matahari();
 Meja meja = new Meja();
 Papan papan = new Papan();
+Kalimat kalimat = new Kalimat();
+int hz = 24;
+//orang hijau
+Orang orang1 = new Orang(1200 , 220, color(0 ,0,128), color(204,204,0));
+Orang orang2 = new Orang(100 , 200, color(104 ,243,248), color(0,204,0));
+Orang orang3 = new Orang(300 , 200, color(224 ,17,95), color(255,127,0));
 int detik = 1;
 void setup(){
   size(1280, 720);
@@ -12,17 +18,28 @@ void setup(){
   fill(0,255,0);
 }
 void draw(){
-  if(detik>0 && detik<120){
+  if(detik>0 && detik<3*hz){
     background1();
+
     meja.display();
     papan.display();
     matahari.display();
     awan1.display();
     awan1.moveAwan(); 
+
+ //translate(150,120);
+    //orang1.lokasi();
+    //orang1.display();
+    //orang1.keyPressed();
+    
+    orang2.display();
+    orang3.display();
+
+
     if (awan1.getx() -300 >width){
       awan1.setx(-120);
     }
-    awan2.display();
+    //awan2.display();
     awan2.moveAwan(); 
   
     if (awan2.getx()-300 >width){
@@ -34,6 +51,78 @@ void draw(){
     if (awan3.getx()-300 >width){
       awan3.setx(-150);
     }
+  }  if(detik>3*hz && detik<6*hz){
+      scale(2);
+    translate(-120,-140);
+    background1();
+
+    meja.display();
+    papan.display();
+    matahari.display();
+    awan1.display();
+    awan1.moveAwan(); 
+
+ //translate(150,120);
+    //orang1.lokasi();
+    //orang1.display();
+    //orang1.keyPressed();
+    
+    orang2.display();
+    orang3.display();
+
+
+    if (awan1.getx() -300 >width){
+      awan1.setx(-120);
+    }
+    //awan2.display();
+    awan2.moveAwan(); 
+  
+    if (awan2.getx()-300 >width){
+      awan2.setx(-150);
+    }
+      awan3.display();
+    awan3.moveAwan(); 
+  
+    if (awan3.getx()-300 >width){
+      awan3.setx(-150);
+    }
+  }  if(detik>6*hz && detik<10*hz){
+      //scale(2);
+    //translate(-200,-140);
+    background1();
+
+    meja.display();
+    papan.display();
+    matahari.display();
+    awan1.display();
+    awan1.moveAwan(); 
+
+ //translate(150,120);
+    //orang1.lokasi();
+    orang1.display();
+    orang1.keyPressed();
+    
+    orang2.display();
+    orang3.display();
+
+
+    if (awan1.getx() -300 >width){
+      awan1.setx(-120);
+    }
+    //awan2.display();
+    awan2.moveAwan(); 
+  
+    if (awan2.getx()-300 >width){
+      awan2.setx(-150);
+    }
+      awan3.display();
+    awan3.moveAwan(); 
+  
+    if (awan3.getx()-300 >width){
+      awan3.setx(-150);
+    }
+  }if(detik>10*hz && detik<15*hz){
+    kalimat.display();
   }
   detik+=1;
 }
