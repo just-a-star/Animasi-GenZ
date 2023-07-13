@@ -1,5 +1,6 @@
 void orgbaru(){
-
+//translate(0,100);
+//scale(2);
 fill(255,208,102);  // warna kulit
 noStroke();
   //strokeWeight(3);  // Mengatur ketebalan garis

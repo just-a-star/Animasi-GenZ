@@ -10,5 +10,7 @@ void scene1(){
   //tekotok();
   //wajah();
   //org();
+   tangan();
   orgbaru();
+ 
 }
