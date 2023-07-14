@@ -14,9 +14,8 @@ Orang orang2 = new Orang(100 , 200, color(104 ,243,248), color(0,204,0));
 Orang orang3 = new Orang(300 , 200, color(224 ,17,95), color(255,127,0));
 int detik = 1;
 
-// Scene 2
 import processing.sound.*; //<>// //<>//
-//  SoundFile kenapa;
+
 
 Teks teks = new Teks();
 Teks2 teks2 = new Teks2();
@@ -30,9 +29,7 @@ void setup(){
   frameRate(24);
   smooth();
   fill(0,255,0);
-  // kenapa = new SoundFile(this, "kenapa.mp3");
   loadSound();
-  loadSound2();
   Thread soundThread = new Thread(new SoundPlayer());
   soundThread.start();
 
@@ -40,8 +37,7 @@ void setup(){
 void draw(){
   //Scene 1 pembicaraan antara orang 1 dan 2
 
-   
-  if(detik>0 && detik<3*hz){
+  if(detik>0 && detik<5*hz){
  
     background1();
     

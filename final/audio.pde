@@ -31,118 +31,101 @@ boolean scene4SoundPlayed = false;
 
 
 
-SoundFile kenapa;
 
-SoundFile a11;
-
-SoundFile b11;
-SoundFile asista_maksud;
-SoundFile asista_oalah;
-SoundFile bf31;
-SoundFile bf32;
-SoundFile bf71;
-SoundFile daudc1;
-SoundFile daudf2c1;
-SoundFile nf41;
-SoundFile nf42;
-SoundFile nf43;
-SoundFile nf44;
-SoundFile nf45;
-SoundFile nf455;
-SoundFile nf46;
-SoundFile nf47;
+SoundFile v1;
+SoundFile v2;
+SoundFile v3;
+SoundFile v4;
+SoundFile v5;
+SoundFile v6;
+SoundFile v7;
+SoundFile v8;
+SoundFile v9;
+SoundFile v10;
+SoundFile v11;
+SoundFile v12;
+SoundFile v13;
+SoundFile v14;
+SoundFile v15;
+SoundFile v16;
+SoundFile v17;
 
 
 
 void loadSound(){
-  kenapa = new SoundFile(this, "kenapa.mp3");
-  a11 = new SoundFile(this, "audio/a11.mp3");
-  b11 = new SoundFile(this, "audio/b11.mp3");
-   asista_maksud = new SoundFile(this, "audio/asista_maksud.mp3");
-   asista_oalah = new SoundFile(this, "audio/asista_oalah.mp3");
-   bf31 = new SoundFile(this, "audio/bf31.mp3");
-   bf32 = new SoundFile(this, "audio/bf32.mp3");
-   bf71 = new SoundFile(this, "audio/bf71.mp3");
-   
-
+  
+  v1 = new SoundFile(this, "audio/1.mp3");
+  v2 = new SoundFile(this, "audio/2.mp3");
+   v3 = new SoundFile(this, "audio/3.mp3");
+   v4 = new SoundFile(this, "audio/4.wav");
+   v5 = new SoundFile(this, "audio/5.mp3");
+   v6 = new SoundFile(this, "audio/6.mp3");
+   v7 = new SoundFile(this, "audio/7.wav");
+   v8 = new SoundFile(this, "audio/8.mp3");
+   v9 = new SoundFile(this, "audio/9.wav");
+   v10 = new SoundFile(this, "audio/10.wav");
+   v11 = new SoundFile(this, "audio/11.wav");
+   v12 = new SoundFile(this, "audio/12.wav");
+   v13 = new SoundFile(this, "audio/13.wav");
+   v14 = new SoundFile(this, "audio/14.wav");
+   v15 = new SoundFile(this, "audio/15.wav");
+   v16 = new SoundFile(this, "audio/16.wav");
+   v17 = new SoundFile(this, "audio/17.mp3");
 
 }
 
-void loadSound2(){
-   daudc1 = new SoundFile(this, "audio/frame 3 c1.wav");
-   daudf2c1 = new SoundFile(this, "audio/frame2 C1.wav");
-   nf41 = new SoundFile(this, "audio/Narator F4-1.wav");
-   nf42 = new SoundFile(this, "audio/Narator F4-2.wav");
-   nf43 = new SoundFile(this, "audio/Narator F4-3.wav");
-   nf44 = new SoundFile(this, "audio/Narator F4-4.wav");
-   nf45 = new SoundFile(this, "audio/Narator F4-5.wav");
-   nf455 = new SoundFile(this, "audio/Narator F4-55.wav");
-   nf46 = new SoundFile(this, "audio/Narator F4-6.wav");
-   nf47 = new SoundFile(this, "audio/Narator F4-7.wav");
-}
 
 
 void playSounds() {
   // Scene 1
   // Adjust the delay time as needed
   
-  a11.play();
-  delay((int) (a11.duration()*1000));
+  v1.play();
+  delay((int) (v1.duration()*1000));
   
-  b11.play();
-  delay((int) (b11.duration()*1000));
+  v2.play();
+  delay((int) (v2.duration()*1000));
   
-  asista_maksud.play();
-  delay((int) (asista_maksud.duration()*1000));
+  v3.play();
+  delay((int) (v3.duration()*1000));
   
-  asista_oalah.play();
-  delay((int) (asista_oalah.duration()*1000));
+  v4.play();
+  delay((int) (v4.duration()*1000));
   
-  bf31.play();
-  delay((int) (bf31.duration()*1000));
+  v5.play();
+  delay((int) (v5.duration()*1000));
   
-  bf32.play();
-  delay((int) (bf32.duration()*1000));
+  v6.play();
+  delay((int) (v6.duration()*1000));
   
-  bf71.play();
-  delay((int) (bf71.duration()*1000));
+  v7.play();
+  delay((int) (v7.duration()*1000));
   
-  daudc1.play();
-  delay((int) (daudc1.duration()*1000));
+  v8.play();
+  delay((int) (v8.duration()*1000));
   
-  daudf2c1.play();
-  delay((int) (daudf2c1.duration()*1000));
+  v9.play();
+  delay((int) (v9.duration()*1000));
   
-  nf41.play();
-  delay((int) (nf41.duration()*1000));
+  v10.play();
+  delay((int) (v10.duration()*1000));
   
-  nf42.play();
-  delay((int) (nf42.duration()*1000));
+  v11.play();
+  delay((int) (v12.duration()*1000));
   
-  nf43.play();
-  delay((int) (nf43.duration()*1000));
+  v13.play();
+  delay((int) (v13.duration()*1000));
   
-  nf44.play();
-  delay((int) (nf44.duration()*1000));
+  v14.play();
+  delay((int) (v14.duration()*1000));
   
-  nf45.play();
-  delay((int) (nf45.duration()*1000));
+  v15.play();
+  delay((int) (v15.duration()*1000));
   
-  nf455.play();
-  delay((int) (nf455.duration()*1000));
+  v16.play();
+  delay((int) (v16.duration()*1000));
   
-  nf46.play();
-  delay((int) (nf46.duration()*1000));
+  v17.play();
+  delay((int) (v17.duration()*1000));
   
-  nf47.play();
-  delay((int) (nf47.duration()*1000));
-  
-  // Scene 2
-  // Call the functions to play sounds for Scene 2
-  
-  // Scene 3
-  // Call the functions to play sounds for Scene 3
-  
-  // Scene 4
-  // Call the functions to play sounds for Scene 4
 }
