@@ -9,26 +9,27 @@ class Kalimat {
     rect(263, 211, 753, 335);
     
     fill(0, 0, 0);  // Set text color to black
-    textSize(50);
+    textSize(25);
     textAlign(CENTER, CENTER);
     
-    // Menambahkan kata-kata dalam bentuk string ke dalam rect
-    String kata1 = "Hello";
-    text(kata1, 355, 256);
-    
-    textSize(30);
-    String kata2 = "Hai lorem uipsum bla bla bla";
-    text(kata2, 460, 340);
-    
-    String kata3 = "Hai lorem uipsum bla bla bla";
-    text(kata3, 820, 340);
-    
-    String kata4 = "Hai lorem uipsum bla bla bla";
-    text(kata4, 460, 380);
+        // Menambahkan kata-kata dalam bentuk string ke dalam rect
+    String kata1 = "25 Bahasa Daerah di Indonesia Terancam Punah";
+    text(kata1, 520, 237);
+    textAlign(LEFT, CENTER);
     
     textSize(20);
-    String kata5 = "Sumber: SasanTech.com";
+    String kata2 = "Sebanyak 25 bahasa daerah terancam punah karena semua penuturnya berusia 20 tahun ke atas dan jumlahnya sangat sedikit.";
+    text(kata2, 270, 246,750,100);
+    
+    String kata3 = "Generasi tua pun sudah tidak berbicara bahasa daerah kepada anak-anak atau hanya \nberbicara dengan usia sebayanya.";
+    text(kata3, 270, 315,750,100);
+    
+    String kata4 = "Kepala Pusat Pembinaan Bahasa dan Sastra, Badan Pengembangan dan Pembinaan Bahasa Kemendikbud Ristek, Abdul Khak mengatakan pihaknya berupaya mencegah punahnya bahasa daerah dengan meluncurkan program Merdeka Belajar Episode 17: Revitalisasi Bahasa Daerah.";
+    text(kata4, 270,390,750, 150);
+    
+    textSize(16);
+    String kata5 = "Sumber: https://www.cnnindonesia.com/";
      
-    text(kata5, 386, 190);
+    text(kata5, 270, 190);
   }
 }
