@@ -1,5 +1,5 @@
 class Teks4{
-  boolean showText= false; // Menandakan apakah teks ditampilkan atau tidak
+  boolean showText= true; // Menandakan apakah teks ditampilkan atau tidak
   int startTime; // Waktu mulai penampilan teks
 public void display(){
 if (showText) {
@@ -7,7 +7,7 @@ if (showText) {
    fill(255);
    pushMatrix();
 
-  String s = "Mereka lebih sering mendengar bahasa inggris dan bahasa indonesia yang lebih dominan dalam konten konten tersebut.";
+  String s = "GenZ juga cenderung mengaitkan penggunaan bahasa daerah dengan persepsi negatif, seperti kuno, kampungan, atau tidak keren. '";
   
   stroke(2);
   strokeWeight(4);
@@ -16,11 +16,8 @@ if (showText) {
   text(s, 730,230,500,210); //<>//
 
   popMatrix();
-      // Cek apakah 5 detik sudah berlalu
-      int currentTime = millis();
-      if (currentTime - startTime >= 5000) {
-        showText = false; // Menghilangkan teks setelah 5 detik
-      }
+      
+      
 }
 
   //}

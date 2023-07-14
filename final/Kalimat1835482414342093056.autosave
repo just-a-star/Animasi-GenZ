@@ -1,4 +1,6 @@
 class Kalimat {
+
+  
   void display() {
     background(255, 255, 255);
     stroke(0, 0, 0);
@@ -11,28 +13,52 @@ class Kalimat {
     textSize(25);
     textAlign(CENTER, CENTER);
     
-    // Menambahkan kata-kata dalam bentuk string ke dalam rect
-    
-    textAlign(CENTER, CENTER); // Align kata1 to the center
-    String kata1 = "25 Bahasa Daerah di Indonesia Terancam Punah";
-    text(kata1, width/2, 237); // Align to the center of the canvas
+    // Display the first line of text
+    displayKata1();
     
     textAlign(LEFT, CENTER);
+    
     textSize(20);
+    
+    // Display the second line of text
+    displayKata2();
+    
+    // Display the third line of text
+    displayKata3();
+    
+    // Display the fourth line of text
+    displayKata4();
+    
+    textSize(16);
+    
+    // Display the fifth line of text
+    displayKata5();
+  }
+  
+  void displayKata1() {
+    String kata1 = "25 Bahasa Daerah di Indonesia Terancam Punah";
+    text(kata1, 520, 237);
+  }
+  
+  void displayKata2() {
     String kata2 = "Sebanyak 25 bahasa daerah terancam punah karena semua penuturnya berusia 20 tahun ke atas dan jumlahnya sangat sedikit.";
     text(kata2, 270, 246, 750, 100);
-    
-    strokeWeight(0.8); // Reset strokeWeight to default
+    teks1.display();
+  }
+  
+  void displayKata3() {
     String kata3 = "Generasi tua pun sudah tidak berbicara bahasa daerah kepada anak-anak atau hanya \nberbicara dengan usia sebayanya.";
     text(kata3, 270, 315, 750, 100);
-    
+  }
+  
+  void displayKata4() {
     String kata4 = "Kepala Pusat Pembinaan Bahasa dan Sastra, Badan Pengembangan dan Pembinaan Bahasa Kemendikbud Ristek, Abdul Khak mengatakan pihaknya berupaya mencegah punahnya bahasa daerah dengan meluncurkan program Merdeka Belajar Episode 17: Revitalisasi Bahasa Daerah.";
     text(kata4, 270, 390, 750, 150);
-    
-    strokeWeight(0.5);
-    textSize(16);
+    teks5.display();
+  }
+  
+  void displayKata5() {
     String kata5 = "Sumber: https://www.cnnindonesia.com/";
-     
     text(kata5, 270, 190);
   }
 }

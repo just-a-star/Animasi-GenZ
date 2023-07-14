@@ -7,7 +7,7 @@ if (showText) {
    fill(255);
    pushMatrix();
 
-  String s = "Mereka lebih sering mendengar bahasa inggris dan bahasa indonesia yang lebih dominan dalam konten konten tersebut.";
+  String s = "Penggunaan bahasa daerah mungkin dianggap sebagai sesuatu yang ketinggalan zaman atau terbatas pada lingkungan tertentu, dan hal ini bisa memengaruhi kepercayaan diri mereka.";
   
   stroke(2);
   strokeWeight(4);

@@ -9,7 +9,7 @@ public void display(){
    if (showText) {
   pushMatrix();
   fill(255);
-  String s = "Kenapa Andra bisa berkata bahasa daerah sudah ketinggalan zaman?";
+  String s = "Kenapa Cey bisa berkata bahasa daerah sudah ketinggalan zaman?";
   String y = "Mari kita bahas!";
   //float sw = textWidth(s);
   stroke(2);
@@ -21,11 +21,10 @@ public void display(){
 
   popMatrix();
   // Cek apakah 5 detik sudah berlalu
-   int currentTime = millis();
-      if (currentTime - startTime >= 8000) {
-        showText = false; // Menghilangkan teks setelah 5 detik
-        teks2.showText = true; // Menampilkan teks2
-        teks2.startTime = currentTime; // Menyimpan waktu mulai teks-2
+   // Check if the specified duration has passed
+      int currentTime = millis();
+      if (currentTime - startTime >= (int) (v9.duration() * 1000)) {
+        showText = false; // Hide the text
       }
     }
 }

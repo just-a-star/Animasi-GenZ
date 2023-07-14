@@ -1,6 +1,6 @@
 
 class Teks2{
-   boolean showText = false; // Menandakan apakah teks ditampilkan atau tidak
+   boolean showText = true; // Menandakan apakah teks ditampilkan atau tidak
   int startTime; // Waktu mulai penampilan teks
 public void display(){
   if (showText) {
@@ -15,13 +15,7 @@ public void display(){
   textAlign(LEFT, CENTER);
   text(s, 730,230,500,210);
   popMatrix();
-   // Cek apakah 5 detik sudah berlalu
-      int currentTime = millis();
-      if (currentTime - startTime >= 5000) {
-        showText = false; // Menghilangkan teks setelah 5 detik
-        teks3.showText = true; // Menampilkan teks3
-        teks3.startTime = currentTime; // Menyimpan waktu mulai teks-3
-      }
+   
     }
   }
 }

@@ -1,5 +1,5 @@
 class Teks5{
-  boolean showText= false; // Menandakan apakah teks ditampilkan atau tidak
+  boolean showText= true; // Menandakan apakah teks ditampilkan atau tidak
   int startTime; // Waktu mulai penampilan teks
 public void display(){
 if (showText) {
@@ -7,7 +7,7 @@ if (showText) {
    fill(255);
    pushMatrix();
 
-  String s = "Mereka lebih sering mendengar bahasa inggris dan bahasa indonesia yang lebih dominan dalam konten konten tersebut.";
+  String s = "Mereka ingin tampil modern dan terhubung dengan tren global, sehingga mereka memilih menggunakan bahasa yang lebih terlihat 'universal' dan 'trend'.";
   
   stroke(2);
   strokeWeight(4);

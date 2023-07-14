@@ -49,7 +49,7 @@ void update() {
     X -= dx*0.5;
   }
   void update2() {
-    // Automatically move to the left
+    // Automatically move to the right
     X += dx;
   }
   void display(){

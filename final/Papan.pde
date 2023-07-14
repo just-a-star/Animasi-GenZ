@@ -14,7 +14,7 @@ class Papan{
   strokeWeight(0.53);
   rect(120.805, 70.976, 89.935, 44.238);
   // Draw the text "TAMAN IMPIAN"
-  fill(0);
+  fill(255,255,255);
   stroke(2);
   strokeWeight(4);
   textSize(10);

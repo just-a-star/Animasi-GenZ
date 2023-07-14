@@ -1,12 +1,12 @@
 
-class Teks3{
+class Teks33{
    boolean showText = true; // Menandakan apakah teks ditampilkan atau tidak
   int startTime; // Waktu mulai penampilan teks
 public void display(){
    if (showText) {
      pushMatrix();
    fill(255);
-  String s = "Dalam era digital, para remaja terpapar oleh budaya luar negeri melalui media sosial, film, musik, dan internet. ";
+  String s = "Mereka lebih sering mendengar Bahasa Inggris dan Bahasa Indonesia yang lebih dominan dalam konten konten tersebut.";
  
   stroke(2);
   strokeWeight(4);
