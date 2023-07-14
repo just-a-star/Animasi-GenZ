@@ -32,123 +32,255 @@ void setup(){
   loadSound();
   Thread soundThread = new Thread(new SoundPlayer());
   soundThread.start();
-
+  // detik = 15*hz;
 }
-void draw(){
-  //Scene 1 pembicaraan antara orang 1 dan 2
-
-  if(detik>0 && detik<5*hz){
- 
+void draw() {
+  System.out.println("detik = " + (detik / hz));
+  if (detik > 0 && detik < 5 * hz) {
     background1();
-    
+
+    scale(1);  // Reset scale to 1
+    translate(0, 0);  // Reset translation
+
+    // Draw the scene without any scaling or translation
     meja.display();
     papan.display();
     matahari.display();
     awan1.display();
-    awan1.moveAwan(); 
-
- //translate(150,120);
-    //orang1.lokasi();
-    //orang1.display();
-    //orang1.keyPressed();
-    
+    awan1.moveAwan();
     orang2.display();
     orang3.display();
 
-
-    if (awan1.getx() -300 >width){
+    if (awan1.getx() - 300 > width) {
       awan1.setx(-120);
     }
-    //awan2.display();
-    awan2.moveAwan(); 
-  
-    if (awan2.getx()-300 >width){
+
+    awan2.moveAwan();
+    if (awan2.getx() - 300 > width) {
       awan2.setx(-150);
     }
-      awan3.display();
-    awan3.moveAwan(); 
-  
-    if (awan3.getx()-300 >width){
+    awan3.display();
+    awan3.moveAwan();
+    if (awan3.getx() - 300 > width) {
       awan3.setx(-150);
     }
   }
-    // Scene 2 zoom in pembicaraan
-  if(detik>3*hz && detik<6*hz){
-      scale(2);
-    translate(-120,-140);
+
+  if (detik > 5 * hz && detik < 15 * hz) {
     background1();
 
+    scale(2);  // Apply scaling
+    translate(-120, -140);  // Apply translation
+
+    // Draw the scene with scaling and translation
     meja.display();
     papan.display();
     matahari.display();
     awan1.display();
-    awan1.moveAwan(); 
-
- //translate(150,120);
-    //orang1.lokasi();
-    //orang1.display();
-    //orang1.keyPressed();
-    
+    awan1.moveAwan();
     orang2.display();
     orang3.display();
 
-
-    if (awan1.getx() -300 >width){
+    if (awan1.getx() - 300 > width) {
       awan1.setx(-120);
     }
-    //awan2.display();
-    awan2.moveAwan(); 
-  
-    if (awan2.getx()-300 >width){
+
+    awan2.moveAwan();
+    if (awan2.getx() - 300 > width) {
       awan2.setx(-150);
     }
-      awan3.display();
-    awan3.moveAwan(); 
-  
-    if (awan3.getx()-300 >width){
+    awan3.display();
+    awan3.moveAwan();
+    if (awan3.getx() - 300 > width) {
       awan3.setx(-150);
     }
-  }  if(detik>6*hz && detik<10*hz){
-      //scale(2);
-    //translate(-200,-140);
+  }
+
+  if (detik > 15 * hz && detik < 22 * hz) {
     background1();
 
+    scale(2.5);  // Apply scaling
+    translate(-150, -200);  // Apply translation
+
+    // Draw the scene with scaling and translation
     meja.display();
     papan.display();
     matahari.display();
     awan1.display();
-    awan1.moveAwan(); 
+    awan1.moveAwan();
+    orang2.display();
+    orang3.display();
 
- //translate(150,120);
-    //orang1.lokasi();
+    if (awan1.getx() - 300 > width) {
+      awan1.setx(-120);
+    }
+
+    awan2.moveAwan();
+    if (awan2.getx() - 300 > width) {
+      awan2.setx(-150);
+    }
+    awan3.display();
+    awan3.moveAwan();
+    if (awan3.getx() - 300 > width) {
+      awan3.setx(-150);
+    }
+  }
+
+  if (detik > 22 * hz && detik < 32 * hz) {
+    // scale(-2.5);
+    // translate(0, 0);
+    background1();
+
+    // Draw the scene without scaling or translation
+    meja.display();
+    papan.display();
+    matahari.display();
+    awan1.display();
+    awan1.moveAwan();
     orang1.display();
-    orang1.keyPressed();
-    
+    orang1.update();
     orang2.display();
     orang3.display();
 
-
-    if (awan1.getx() -300 >width){
+    if (awan1.getx() - 300 > width) {
       awan1.setx(-120);
     }
-    //awan2.display();
-    awan2.moveAwan(); 
-  
-    if (awan2.getx()-300 >width){
+
+    awan2.moveAwan();
+    if (awan2.getx() - 300 > width) {
       awan2.setx(-150);
     }
-      awan3.display();
-    awan3.moveAwan(); 
-  
-    if (awan3.getx()-300 >width){
+    awan3.display();
+    awan3.moveAwan();
+    if (awan3.getx() - 300 > width) {
       awan3.setx(-150);
     }
-  }if(detik>10*hz && detik<15*hz){
-    kalimat.display();
   }
-  detik+=1;
-   }
 
+  if (detik > 32 * hz && detik < 35 * hz) {
+    translate(-150, -200);
+    scale(2);
+    background1();
+
+    // Draw the scene with scaling and translation
+    meja.display();
+    papan.display();
+    matahari.display();
+    awan1.display();
+    awan1.moveAwan();
+    orang1.display();
+    // orang1.update2();
+    orang2.display();
+    orang3.display();
+
+    if (awan1.getx() - 300 > width) {
+      awan1.setx(-120);
+    }
+
+    awan2.moveAwan();
+    if (awan2.getx() - 300 > width) {
+      awan2.setx(-150);
+    }
+    awan3.display();
+    awan3.moveAwan();
+    if (awan3.getx() - 300 > width) {
+      awan3.setx(-150);
+    }
+  }
+  if (detik > 35 * hz && detik < 40 * hz) {
+    // translate(-150, -200);
+    // scale(2);
+    background1();
+
+    // Draw the scene with scaling and translation
+    meja.display();
+    papan.display();
+    matahari.display();
+    awan1.display();
+    awan1.moveAwan();
+    orang1.display();
+    // orang1.update2();
+    orang2.display();
+    orang3.display();
+
+    if (awan1.getx() - 300 > width) {
+      awan1.setx(-120);
+    }
+
+    awan2.moveAwan();
+    if (awan2.getx() - 300 > width) {
+      awan2.setx(-150);
+    }
+    awan3.display();
+    awan3.moveAwan();
+    if (awan3.getx() - 300 > width) {
+      awan3.setx(-150);
+    }
+  }
+  if (detik > 40 * hz && detik < 45 * hz) {
+    translate(-150, -200);
+    scale(2);
+    background1();
+
+    // Draw the scene with scaling and translation
+    meja.display();
+    papan.display();
+    matahari.display();
+    awan1.display();
+    awan1.moveAwan();
+    orang1.display();
+    // orang1.update2();
+    orang2.display();
+    orang3.display();
+
+    if (awan1.getx() - 300 > width) {
+      awan1.setx(-120);
+    }
+
+    awan2.moveAwan();
+    if (awan2.getx() - 300 > width) {
+      awan2.setx(-150);
+    }
+    awan3.display();
+    awan3.moveAwan();
+    if (awan3.getx() - 300 > width) {
+      awan3.setx(-150);
+    }
+  }
+    if (detik > 45 * hz && detik < 56 * hz) {
+    // translate(-150, -200);
+    // scale(2);
+    background1();
+
+    // Draw the scene with scaling and translation
+    meja.display();
+    papan.display();
+    matahari.display();
+    awan1.display();
+    awan1.moveAwan();
+    orang1.display();
+    // orang1.update2();
+    orang2.display();
+    orang3.display();
+
+    if (awan1.getx() - 300 > width) {
+      awan1.setx(-120);
+    }
+
+    awan2.moveAwan();
+    if (awan2.getx() - 300 > width) {
+      awan2.setx(-150);
+    }
+    awan3.display();
+    awan3.moveAwan();
+    if (awan3.getx() - 300 > width) {
+      awan3.setx(-150);
+    }
+  }
+
+  detik += 1;
+}
+//kalimat.display()
 class SoundPlayer implements Runnable {
   public void run() {
     playSounds();

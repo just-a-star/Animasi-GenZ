@@ -43,6 +43,15 @@ void keyPressed() {
    }
   }  
 }
+
+void update() {
+    // Automatically move to the left
+    X -= dx*0.5;
+  }
+  void update2() {
+    // Automatically move to the left
+    X += dx;
+  }
   void display(){
     pushMatrix();
     //translate (width/2, height/2);
